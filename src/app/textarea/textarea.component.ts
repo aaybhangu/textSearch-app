@@ -3,6 +3,7 @@ import { NgRedux, select } from "@angular-redux/store";
 import { IAppState } from "../store/store";
 import { FilterItemsAction, DeleteItemsAction } from "../store/actions";
 import namesList from "../../assets/names.json";
+
 @Component({
   selector: "app-textarea",
   templateUrl: "./textarea.component.html",
