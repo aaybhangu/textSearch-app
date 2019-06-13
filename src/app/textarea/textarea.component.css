@@ -1,0 +1,13 @@
+textarea {
+  width: inherit;
+  border: none;
+  display: inline-block;
+}
+textarea:focus {
+  outline: none;
+}
+.container {
+  border: 1px solid #b3b3b3 !important;
+  padding: 0.01em 16px;
+  border-radius: 16px;
+}

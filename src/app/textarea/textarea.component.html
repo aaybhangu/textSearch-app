@@ -1,0 +1,21 @@
+<div class="container ">
+  <div class="input-group">
+    <div #itemscontainer>
+      <selected-items
+        *ngFor="let item of selectedItems; let i = index"
+        [selectedItemName]="item"
+        [itemIndex]="i"
+      ></selected-items>
+    </div>
+    <textarea
+      [(ngModel)]="textValue"
+      (input)="filterItem()"
+      (keyup.backspace)="onKey($event)"
+      placeholder="enter name"
+    ></textarea>
+  </div>
+</div>
+
+<ul class="list-group">
+  <listitem *ngFor="let item of filteredItems" [itemName]="item"></listitem>
+</ul>
